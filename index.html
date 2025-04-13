@@ -9,8 +9,9 @@
   <body>
     <header>
       <nav class="navbar">
-        <h1 class="logo">HafidDev</h1>
-        <ul class="nav-links">
+        <h1 class="logo">Hafidtsh</h1>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#about">Tentang</a></li>
           <li><a href="#projects">Proyek</a></li>
           <li><a href="#contact">Kontak</a></li>
@@ -20,6 +21,7 @@
 
     <section class="hero">
       <div class="hero-text">
+        <img src="https://media.licdn.com/dms/image/C5603AQGDoIRZRtC3Aw/profile-displayphoto-shrink_200_200/0/1619493470365?e=2147483647&v=beta&t=hzng6zB6-GH1EQ2nQ80WswefFv4MJNrK1wi2QygLn7k" alt="Foto in LinkeIn" />
         <h2>Halo, saya Hafid 👋</h2>
         <p>Calon Backend Developer & DevOps Enthusiast</p>
         <a href="#contact" class="btn">Hubungi Saya</a>
@@ -52,9 +54,9 @@
       <h2>Kontak</h2>
       <p>Anda bisa menghubungi saya melalui:</p>
       <ul>
-        <li>Email: hafid@example.com</li>
-        <li>GitHub: <a href="https://github.com/hafiddev" target="_blank">github.com/hafiddev</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/hafid" target="_blank">linkedin.com/in/hafid</a></li>
+        <li>Email: hapid.triansyah@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/Hafidtsh" target="_blank">github.com/Hafidtsh</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/hapid-triansyah-9a304520b" target="_blank">linkedin.com/in/hapid-triansyah</a></li>
       </ul>
     </section>
 
@@ -62,4 +64,12 @@
       <p>&copy; 2025 Hafid. Dibuat dengan ❤️ dan semangat belajar.</p>
     </footer>
   </body>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </html>
